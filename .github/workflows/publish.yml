@@ -1,3 +1,12 @@
+name: Publish to PyPI
+
+on:
+  workflow_dispatch: 
+
+permissions:
+  contents: read
+  id-token: write
+
 jobs:
   build-and-publish:
     name: Build and Publish
@@ -10,8 +19,7 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
-          python-version: "3.13"   # matches your requires-python
-
+          python-version: "3.13"   
       - name: Install build tools
         run: python -m pip install --upgrade build
 
@@ -23,4 +31,3 @@ jobs:
         with:
           verbose: true
           password: ${{ secrets.PYPI_API_TOKEN }}
-          # DO NOT set packages-dir — default dist/ is correct
