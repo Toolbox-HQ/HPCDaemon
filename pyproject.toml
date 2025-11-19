@@ -1,14 +1,22 @@
 [project]
 name = "hpcdaemon"
-version = "0.1.0"
-description = "Add your description here"
+version = "0.0.1"
+authors = [
+  { name="Example Author", email="author@example.com" },
+]
+description = "A small example package"
 readme = "README.md"
-requires-python = ">=3.13"
+requires-python = ">=3.9"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+license = "MIT"
 dependencies = []
 
 [project.scripts]
 hpcdaemon = "hpcdaemon.cli:main"
 
 [build-system]
-requires = ["setuptools>=68", "wheel"]
+requires = ["setuptools >= 77.0.3"]
 build-backend = "setuptools.build_meta"
