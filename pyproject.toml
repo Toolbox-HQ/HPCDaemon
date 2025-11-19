@@ -9,8 +9,6 @@ dependencies = []
 [project.scripts]
 hpcdaemon = "hpcdaemon.cli:main"
 
-[metadata]
-
 [build-system]
 requires = ["setuptools>=68", "wheel"]
 build-backend = "setuptools.build_meta"
