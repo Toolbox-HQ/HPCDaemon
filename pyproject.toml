@@ -9,7 +9,7 @@ requires-python = ">=3.12"
 dependencies = []
 
 [project.scripts]
-hpdc-cli = "hpcdaemon.cli:main"
+hpcd-cli = "hpcdaemon.cli:main"
 
 [build-system]
 requires = ["uv_build>=0.9,<0.10"]
