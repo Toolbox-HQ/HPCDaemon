@@ -29,9 +29,9 @@ jobs:
 
       - name: Build package with uv
         run: uv build
-        
+
       - name: Publish to PyPI
-        uses: pypa/gh-action-pypi-publish@v1.13.0
+        uses: pypa/gh-action-pypi-publish@v1.10.0
         with:
           verbose: true
           password: ${{ secrets.PYPI_API_TOKEN }}
