@@ -18,5 +18,5 @@ dependencies = []
 hpcdaemon = "hpcdaemon.cli:main"
 
 [build-system]
-requires = ["setuptools >= 77.0.3"]
-build-backend = "setuptools.build_meta"
+requires = ["uv-build"]
+build-backend = "uv.build"
